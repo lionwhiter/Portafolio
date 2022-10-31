@@ -513,13 +513,13 @@
 			</article>
 			<span >
 				<span class="enviarData" id="whatsapp">
-					<i class="fa-brands fa-envira"></i>
+					<i class="fa-brands fa-whatsapp"></i>	
 				</span>
 			</span>
 		</div>
-		<article class="toolsWhatsapp"  >
+		<article class="toolsWhatsapp">
 			<span class="btnWhatsapp">
-				<i class="fa-brands fa-whatsapp"></i>	
+				<i class="fa-brands fa-envira"></i>
 			</span>
 			<span class="btnCark" >
 				<i class="fa-solid fa-cart-shopping"></i>
@@ -590,10 +590,14 @@
 
 					if (this.isOpen) {
 						classie.remove(self.el, 'menu--anim');
+						document.querySelector('main').classList.remove('loadingMenu');
+
 						setTimeout(function () { classie.remove(self.el, 'menu--open'); }, 250);
 					}
 					else {
 						classie.add(self.el, 'menu--anim');
+						document.querySelector('main').classList.add('loadingMenu');
+						
 						setTimeout(function () { classie.add(self.el, 'menu--open'); }, 250);
 					}
 					this.pathEl.stop().animate({ 'path': this.isOpen ? this.paths.close : this.paths.open }, 350, mina.easeout, function () {

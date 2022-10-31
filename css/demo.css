@@ -9,7 +9,7 @@
 	--background-color-2: #282faf;
 	--background-color-3: #202692;
 	--link-color: #03b9f1;
-	--link-hover-color: #f5f0ee;
+	--link-hover-color: #e8e6e5;
     --inverted-corners-size: 2rem;
 
 }
@@ -86,6 +86,18 @@ body {
 	to {
 		transform: rotate(360deg);
 	}
+}
+.loadingMenu::before{
+
+  background-color: rgba(19, 18, 18, 0.81);
+  content: '';
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
 }
 
 main {
@@ -273,7 +285,7 @@ strong {
 	left: calc(100% - 1rem);
 	color: var(--secund-color);
 	border: 2px solid var(--fondoColor);
-	bottom: 20%;
+	bottom: 25%;
 	font-size: 2rem;
 }
  .enviarData:hover{
@@ -571,7 +583,6 @@ strong {
 	--background-color-3: #553e9a;
 	--text-color: #fff;
 	--link-color: #f4f4f4;
-	--link-hover-color: #fff;
 }
 
 .demo-3 {
@@ -580,7 +591,6 @@ strong {
 	--background-color-3: #1747c0;
 	--text-color: #fff;
 	--link-color: #fff;
-	--link-hover-color: #17b1b5;
 }
 
 .demo-3 .morph {
@@ -623,14 +633,14 @@ strong {
 	position: fixed;
 	right: .6%;
 	bottom: 15%;
-	width: 12%;
+	width: 20%;
 	height: 20%;
 	border-radius: 10px;
 	color: var(--fondoColor);
 	padding-left: 5px;
 	overflow: auto;
-	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 93% 92%, 84% 80%, 0 80%); 
-	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 93% 92%, 84% 80%, 0 80%);
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%) ; 
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%) ;
 }
 
 .inverted-corners article {
@@ -767,7 +777,6 @@ strong {
 		font-size: 1.35em;
 	}
 	.inverted-corners {
-		background-color: var(--text-color);
 		position: fixed;
 		right: .6%;
 		bottom: 16%;
