@@ -1,0 +1,121 @@
+:root{
+	--primari-color: #f50;
+	--primari-color-axuliar: rgba(213, 84, 19, 0.874);
+	--primari-color-Constrac: #712804;
+	--primary-color-contrac2 : rgba(255, 100, 22, 0.61);
+	--secund-color: #fbff0b;
+	--fondoColor :  #333;
+	--fondoColor2 : #d0caca;
+
+	--text-color: #fff;
+	--background-color: #363dc2;
+	--background-color-2: #282faf;
+	--background-color-3: #202692;
+	--link-color: #03b9f1;
+	--link-hover-color: #fff;
+}
+
+@font-face {
+	font-family: 'nexa_boldregular';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.eot');
+	src: url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.woff2') format('woff2'), url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.woff') format('woff'), url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.ttf') format('truetype'), url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Montserrat-ExtraLight';
+	src: url('../fonts/Montserrat/Montserrat-ExtraLight.ttf');
+}
+
+
+@font-face {
+	font-family: 'BebasNeue';
+	src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+}
+
+body{
+	margin-top: 10%;
+	background-color:  var(--fondoColor2);
+}
+strong{
+	color: var(--primari-color-Constrac);
+}
+
+/* SVG Morph */
+.morph-wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+}
+
+.morph {
+	position: relative;
+	height: 100%;
+	fill: var(--fondoColor2);
+	flex: none;
+}
+
+
+.form-signin{
+ font-family: 'Montserrat';
+ color:var(--fondoColor); 
+}
+
+.form-signin img{
+	position: relative;
+	width: 20%;
+}
+
+.form-signin .btn-primary{
+	position: relative;
+    background-color: var(--fondoColor);
+}
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+
+    color: #fff;
+    background-color:var(--primari-color);
+    border-color: var(--primari-color-axuliar);
+    box-shadow: 0 0 0 .25rem var(--primari-color-Constrac);
+
+}
+.form-control:focus {
+	color: #212529;
+	background-color: #fff;
+	border-color: var(--primari-color);
+	outline: 0;
+	box-shadow: 0 0 0 .25rem var(--primari-color-contrac2);
+  }
+.content--main{
+
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	padding: 0 2em;
+	min-height: 600px;
+	height: 100vh;
+	font-size: 0.85em;
+}
+
+.content--main h4 {
+	font-size: 4vw;
+	color: var(--primari-color);
+	margin-bottom: 0;
+}
+.content--main p {
+	font-weight: bold;
+	color: var(--primari-color);
+}
