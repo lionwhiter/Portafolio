@@ -147,7 +147,7 @@
 .menu__handle::before,
 .menu__handle::after,
 .menu__handle span {
-	background: #5f656f;
+	background: #fff;
 }
 
 .menu__handle::before,
@@ -208,7 +208,7 @@
 }
 
 .morph-shape svg path {
-	stroke: #5f656f;
+	stroke: #fff;
 	stroke-width: 5px;
 }
 
